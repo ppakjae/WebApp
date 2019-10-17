@@ -1,0 +1,59 @@
+body {
+    background: url("background.png");
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 8pt;
+    margin: 0%;
+}
+
+#banner {
+    background: url("bannerbg.png");
+    height: 50px;
+    margin: 0%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24pt;
+    font-weight: bold;
+    font-family: Tahoma, Verdana, sans-serif;
+    text-shadow: 3px 3px #999999;
+    
+}
+
+#content_area{
+    margin: 0 auto;
+    width: 800px;
+    align-content: center;
+    border: 4px solid gray;
+    border-radius: 20px;
+}
+
+#top_rating{
+    background: url("rbg.png");
+    width: 550px;
+    height: 83px;
+    font-size: 48pt;
+    color: red;
+    font-weight: bold;
+    float: left;
+}
+
+.review {
+    width: 47%;
+    background: #E8DC9B;
+    font: 8pt;
+    font-weight: bold;
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+
+#overview_img{
+    float: right;
+}
+
+#overview{
+    width: 250px;
+    background: #A2B964;
+    float: right;
+    clear: right;
+}
