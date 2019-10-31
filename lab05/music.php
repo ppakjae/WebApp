@@ -12,10 +12,11 @@
 		<h1>My Music Page</h1>
 		
 		<!-- Ex 1: Number of Songs (Variables) -->
+		<?php $song_count = 5678; ?>
 		<p>
 			I love music.
-			I have 1234 total songs,
-			which is over 123 hours of music!
+			I have <?= $song_count ?> total songs,
+			which is over <?= (int)($song_count / 10) ?> hours of music!
 		</p>
 
 		<!-- Ex 2: Top Music News (Loops) -->
@@ -24,11 +25,9 @@
 			<h2>Billboard News</h2>
 		
 			<ol>
-			    <li><a href="https://www.billboard.com/archive/article/201910">2019-11</a></li>
-				<li><a href="https://www.billboard.com/archive/article/201910">2019-10</a></li>
-				<li><a href="https://www.billboard.com/archive/article/201909">2019-09</a></li>
-				<li><a href="https://www.billboard.com/archive/article/201908">2019-08</a></li>
-				<li><a href="https://www.billboard.com/archive/article/201907">2019-07</a></li>
+				<?php for ($i = 11; $i >6; $i--) { ?>
+					<li><a href="https://www.billboard.com/archive/article/".<?= $i ?>> 2019-<?=$i?></a><li> 
+				<?php } ?> 
 			</ol>
 		</div>
 
